@@ -1,4 +1,10 @@
 <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
 <p>
-    <%=@post.content%>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
 </p>
+
+<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path %>
+<%= link_to 'Delete', @post, method: :delete %>

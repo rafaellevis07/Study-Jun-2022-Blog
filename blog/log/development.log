@@ -1843,3 +1843,2373 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.2ms | Allocations: 4820)
 
 
+Started GET "/" for ::1 at 2022-06-28 17:11:58 -0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/rafagarcia/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/rafagarcia/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.7ms | Allocations: 501)
+Completed 200 OK in 58ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 3824)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:12:04 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 51.6ms | Allocations: 5006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.3ms | Allocations: 11483)
+Completed 200 OK in 118ms (Views: 104.5ms | ActiveRecord: 4.2ms | Allocations: 13599)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:12:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 3843)
+Completed 200 OK in 66ms (Views: 45.0ms | ActiveRecord: 0.3ms | Allocations: 8393)
+
+
+Started GET "/posts/2" for ::1 at 2022-06-28 17:14:07 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 4157)
+Completed 200 OK in 64ms (Views: 57.1ms | ActiveRecord: 0.2ms | Allocations: 5215)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:14:59 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 4910)
+Completed 200 OK in 72ms (Views: 64.7ms | ActiveRecord: 0.2ms | Allocations: 6784)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:15:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 4063)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 6491)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:15:50 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 4121)
+Completed 200 OK in 88ms (Views: 82.8ms | ActiveRecord: 0.2ms | Allocations: 6113)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:16:08 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 4127)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.2ms | Allocations: 6121)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:16:15 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 4127)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.2ms | Allocations: 6117)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:16:42 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 4136)
+Completed 200 OK in 57ms (Views: 50.7ms | ActiveRecord: 0.4ms | Allocations: 6158)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:17:47 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5816)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.4ms | Allocations: 7205)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 17:17:49 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 61.3ms | Allocations: 7119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 10668)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms | Allocations: 11370)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:19:53 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 4293)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.2ms | Allocations: 5585)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:20:00 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4127)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.2ms | Allocations: 5997)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:20:22 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4126)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 6115)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:20:29 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4136)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.3ms | Allocations: 6134)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:20:33 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4123)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.2ms | Allocations: 6117)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:28:29 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 4668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 8556)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 1.1ms | Allocations: 10563)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 17:28:30 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1439)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 4941)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 5595)
+
+
+Started POST "/posts" for ::1 at 2022-06-28 17:29:08 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/posts"):
+  
+Started GET "/posts/new" for ::1 at 2022-06-28 17:29:33 -0700
+Processing by PostsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 39.4ms | Allocations: 1382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 5092)
+Completed 200 OK in 225ms (Views: 100.6ms | ActiveRecord: 97.5ms | Allocations: 10162)
+
+
+Started POST "/posts" for ::1 at 2022-06-28 17:29:35 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/posts"):
+  
+Started POST "/posts" for ::1 at 2022-06-28 17:30:03 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Rafitos Fernandes", "title"=>"Let's see", "content"=>"This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mPost Create (5.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Let's see"], ["author", "Rafitos Fernandes"], ["content", "This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!"], ["created_at", "2022-06-29 00:30:03.749696"], ["updated_at", "2022-06-29 00:30:03.749696"]]
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 219ms (ActiveRecord: 8.2ms | Allocations: 7649)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:30:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 40.3ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 3968)
+Completed 200 OK in 117ms (Views: 110.1ms | ActiveRecord: 0.3ms | Allocations: 5680)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:35:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 77.7ms | Allocations: 4319)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 4393)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 1.2ms | Allocations: 13339)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_post' for #<ActionView::Base:0x0000000000cb98>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/3" for ::1 at 2022-06-28 17:36:06 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 4280)
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 0.3ms | Allocations: 6274)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:49 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 3609)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.3ms | Allocations: 4723)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 17:37:52 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 5003)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 5601)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:55 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3609)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 4596)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3609)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 4597)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 3609)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 4597)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3609)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 4598)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3609)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 4597)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:37:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3617)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 4605)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 17:42:24 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 339)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4227)
+Completed 200 OK in 79ms (Views: 13.9ms | ActiveRecord: 2.6ms | Allocations: 10812)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:42:28 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4705)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms | Allocations: 5341)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:42:29 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 4123)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.2ms | Allocations: 5138)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 17:42:33 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1099)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1168)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1741)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render 'form' post: @post %>
+):
+1:    <%= render 'form' post: @post %>
+  
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/new.html.erb:1: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/posts/new" for ::1 at 2022-06-28 17:43:14 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.5ms | Allocations: 1515)
+  Rendered posts/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1845)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 5726)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms | Allocations: 7061)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 17:43:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/posts/3/edit"):
+  
+Started GET "/posts/new" for ::1 at 2022-06-28 17:43:22 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.8ms | Allocations: 1095)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4680)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 5163)
+
+
+Started POST "/posts" for ::1 at 2022-06-28 17:43:35 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"Test", "content"=>"Big Test"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Test"], ["author", "Test"], ["content", "Big Test"], ["created_at", "2022-06-29 00:43:35.949493"], ["updated_at", "2022-06-29 00:43:35.949493"]]
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 2684)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:43:35 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3752)
+Completed 200 OK in 25ms (Views: 17.5ms | ActiveRecord: 0.2ms | Allocations: 4881)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:43:38 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3618)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.2ms | Allocations: 4607)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:43:41 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1074)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4577)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 5160)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:48:49 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 129.8ms | Allocations: 3925)
+Completed 200 OK in 165ms (Views: 131.5ms | ActiveRecord: 2.1ms | Allocations: 9834)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:48:51 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3618)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 4733)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:48:53 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3618)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.2ms | Allocations: 4607)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:48:53 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3608)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.2ms | Allocations: 4596)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:49:10 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.1ms | Allocations: 3930)
+Completed 200 OK in 149ms (Views: 89.7ms | ActiveRecord: 1.6ms | Allocations: 9779)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:49:11 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3618)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 4736)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:49:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3618)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.2ms | Allocations: 4607)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:49:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3617)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 4605)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:51:07 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4047)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4121)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms | Allocations: 5982)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000010ef0>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-06-28 17:51:43 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1252)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms | Allocations: 3202)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
+<p>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
+</p>
+
+<%= link_to 'Edit Post' edit_post(@post)%>
+):
+1:    <h1><%= @post.title %></h1>
+2:    <h4>Author: <%=@post.author %></h4>
+3:    <p>
+4:         <strong>Post:</strong> 
+5:         <p><%=@post.content%></p>
+6:    </p>
+7:    
+8:    <%= link_to 'Edit Post' edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/posts/4" for ::1 at 2022-06-28 17:51:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4018)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4092)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms | Allocations: 6041)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000011a58>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-06-28 17:54:08 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 3863)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3937)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 1.3ms | Allocations: 9798)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000012d18>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts" for ::1 at 2022-06-28 17:54:15 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1283)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 5158)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.5ms | Allocations: 5813)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:54:16 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 39.4ms | Allocations: 3837)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 4501)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.2ms | Allocations: 5476)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x000000000130d8>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts" for ::1 at 2022-06-28 17:54:36 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 4421)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.3ms | Allocations: 4876)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 17:54:37 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 3838)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3906)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms | Allocations: 4854)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000013420>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts" for ::1 at 2022-06-28 17:54:43 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 5023)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.2ms | Allocations: 5479)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 17:55:03 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.7ms | Allocations: 1435)
+  Rendered posts/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 5830)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 6430)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:55:06 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3845)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3913)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms | Allocations: 4863)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x000000000137b8>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-06-28 17:55:32 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 4172)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.2ms | Allocations: 6037)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:55:35 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 5243)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 1.1ms | Allocations: 5881)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:55:36 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3604)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 4619)
+
+
+Started GET "/posts/edit_post(@post)" for ::1 at 2022-06-28 17:55:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"edit_post(@post)"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=edit_post(@post)):
+  
+app/controllers/posts_controller.rb:7:in `show'
+Started GET "/posts/4" for ::1 at 2022-06-28 17:56:15 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 4175)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.3ms | Allocations: 5161)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:56:41 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 5925)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.2ms | Allocations: 7253)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:56:42 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4228)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 4296)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms | Allocations: 5452)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_post' for #<ActionView::Base:0x00000000014258>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts" for ::1 at 2022-06-28 17:56:44 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1365)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4992)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 3.1ms | Allocations: 5449)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:56:45 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.6ms | Allocations: 4079)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4147)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms | Allocations: 5095)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_post' for #<ActionView::Base:0x00000000014730>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts" for ::1 at 2022-06-28 17:56:47 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1023)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 4536)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms | Allocations: 5027)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 4010)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4084)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.7ms | Allocations: 10625)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000015900>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:13 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1174)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1249)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms | Allocations: 3198)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
+<p>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
+</p>
+
+<%= link_to 'Edit Post' edit_post(@post)%>
+):
+1:    <h1><%= @post.title %></h1>
+2:    <h4>Author: <%=@post.author %></h4>
+3:    <p>
+4:         <strong>Post:</strong> 
+5:         <p><%=@post.content%></p>
+6:    </p>
+7:    
+8:    <%= link_to 'Edit Post' edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:19 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1122)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1191)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 2273)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
+<p>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
+</p>
+
+<%= link_to 'Edit Post' edit_post(@post)%>
+):
+1:    <h1><%= @post.title %></h1>
+2:    <h4>Author: <%=@post.author %></h4>
+3:    <p>
+4:         <strong>Post:</strong> 
+5:         <p><%=@post.content%></p>
+6:    </p>
+7:    
+8:    <%= link_to 'Edit Post' edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:25 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 22.0ms | Allocations: 4018)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 4092)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.2ms | Allocations: 5909)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post' for #<ActionView::Base:0x00000000016620>
+Did you mean?  edit_post_url):
+    5:      <p><%=@post.content%></p>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit Post', edit_post(@post)%>
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:39 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 326)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4236)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 6232)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 17:58:41 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 5354)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.4ms | Allocations: 5994)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:58:42 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3608)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms | Allocations: 4623)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 17:58:43 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.1ms | Allocations: 1539)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1842)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 5860)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.2ms | Allocations: 6976)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:59:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4226)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 5217)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 17:59:03 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.0ms | Allocations: 1172)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5362)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.2ms | Allocations: 6351)
+
+
+Started PATCH "/posts/4" for ::1 at 2022-06-28 17:59:06 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"Test", "content"=>"Big Test!!"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "Big Test!!"], ["updated_at", "2022-06-29 00:59:06.575780"], ["id", 4]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 20ms (ActiveRecord: 4.3ms | Allocations: 3395)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 17:59:06 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3608)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 4593)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 18:00:03 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.3ms | Allocations: 1172)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 5360)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 1.2ms | Allocations: 6348)
+
+
+Started PATCH "/posts/4" for ::1 at 2022-06-28 18:00:09 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"FReak", "title"=>"Test", "content"=>"Big Test!!"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "author" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["author", "FReak"], ["updated_at", "2022-06-29 01:00:09.574676"], ["id", 4]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 17ms (ActiveRecord: 2.1ms | Allocations: 2996)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:00:09 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3617)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.2ms | Allocations: 4603)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 18:00:10 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.0ms | Allocations: 1172)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 5369)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 0.2ms | Allocations: 6360)
+
+
+Started PATCH "/posts/4" for ::1 at 2022-06-28 18:00:16 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Freak", "title"=>"Test", "content"=>"Big Test!!"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (1.8ms)[0m  [1m[33mUPDATE "posts" SET "author" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["author", "Freak"], ["updated_at", "2022-06-29 01:00:16.284326"], ["id", 4]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 18ms (ActiveRecord: 4.4ms | Allocations: 2994)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:00:16 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3617)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.2ms | Allocations: 4602)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:00:20 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 4410)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 4865)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:00:35 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3640)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 4628)
+
+
+Started GET "/posts/1/edit" for ::1 at 2022-06-28 18:00:37 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 44.3ms | Allocations: 1173)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 44.8ms | Allocations: 1267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 4769)
+Completed 200 OK in 101ms (Views: 69.4ms | ActiveRecord: 0.2ms | Allocations: 5760)
+
+
+Started PATCH "/posts/1" for ::1 at 2022-06-28 18:00:41 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Rafael Garcia", "title"=>"First Post", "content"=>"This is my first post create from the console. Of course, this is a test, soon enough I will be able to create, read, update and delete posts directly from the page"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "This is my first post create from the console. Of course, this is a test, soon enough I will be able to create, read, update and delete posts directly from the page"], ["updated_at", "2022-06-29 01:00:41.786785"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 18ms (ActiveRecord: 5.2ms | Allocations: 2997)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:00:41 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3619)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 4605)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:00:47 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 4414)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms | Allocations: 4870)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:02:21 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4277)
+Completed 200 OK in 100ms (Views: 20.3ms | ActiveRecord: 1.8ms | Allocations: 13244)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:02:22 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4752)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms | Allocations: 5391)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:02:24 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4238)
+Completed 200 OK in 30ms (Views: 24.8ms | ActiveRecord: 0.3ms | Allocations: 5253)
+
+
+Started GET "/posts/1/edit" for ::1 at 2022-06-28 18:02:25 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.3ms | Allocations: 1517)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 5917)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 0.2ms | Allocations: 7035)
+
+
+Started PATCH "/posts/1" for ::1 at 2022-06-28 18:02:27 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Rafael Garcia", "title"=>"First Post", "content"=>"This is my first post create from the console. Of course, this is a test, soon enough I will be able to create, read, update and delete posts directly from the page"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1251)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:02:27 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3638)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.2ms | Allocations: 4625)
+
+
+Started GET "/posts/1/edit" for ::1 at 2022-06-28 18:03:20 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.7ms | Allocations: 1683)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 5870)
+Completed 200 OK in 164ms (Views: 32.6ms | ActiveRecord: 24.7ms | Allocations: 12449)
+
+
+Started PATCH "/posts/1" for ::1 at 2022-06-28 18:03:22 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Rafael Garcia", "title"=>"First Post", "content"=>"This is my first post create from the console. Of course, this is a test, soon enough I will be able to create, read, update and delete posts directly from the page"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 1338)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:03:22 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3794)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.6ms | Allocations: 4922)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:03:23 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4632)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.3ms | Allocations: 5220)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-28 18:03:24 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4232)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.3ms | Allocations: 5220)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:03:25 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 5005)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.2ms | Allocations: 5463)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:03:26 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 4228)
+Completed 200 OK in 97ms (Views: 92.8ms | ActiveRecord: 0.2ms | Allocations: 5216)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:03:26 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4410)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.6ms | Allocations: 4868)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 18:10:53 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.1ms | Allocations: 1096)
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 5362)
+Completed 200 OK in 65ms (Views: 60.8ms | Allocations: 5959)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:10:56 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4238)
+Completed 200 OK in 36ms (Views: 24.9ms | ActiveRecord: 2.8ms | Allocations: 5874)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 18:10:58 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.2ms | Allocations: 1173)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 5349)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.2ms | Allocations: 6338)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:11:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 4259)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.2ms | Allocations: 5250)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 18:11:04 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.8ms | Allocations: 1173)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 4768)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.2ms | Allocations: 5757)
+
+
+Started PATCH "/posts/3" for ::1 at 2022-06-28 18:11:12 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Fernandes", "title"=>"Let's see", "content"=>"This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!"}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (1.7ms)[0m  [1m[33mUPDATE "posts" SET "author" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["author", "Fernandes"], ["updated_at", "2022-06-29 01:11:12.017154"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 16ms (ActiveRecord: 3.4ms | Allocations: 3070)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:11:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3638)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 4623)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:11:16 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 5024)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.3ms | Allocations: 5482)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:12:34 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 5061)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.2ms | Allocations: 6933)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 18:12:36 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 5.6ms | Allocations: 1548)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 5939)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 7179)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:12:40 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 5168)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.4ms | Allocations: 5754)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:27:18 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1195)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1270)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms | Allocations: 7397)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
+<p>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
+</p>
+
+<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path %>
+<%= link_to 'Delete', @post method: :destroy %>
+
+):
+1:    <h1><%= @post.title %></h1>
+2:    <h4>Author: <%=@post.author %></h4>
+3:    <p>
+4:         <strong>Post:</strong> 
+5:         <p><%=@post.content%></p>
+6:    </p>
+7:    
+8:    <%= link_to 'Back', posts_path %>
+9:    <%= link_to 'Edit', edit_post_path %>
+10:    <%= link_to 'Delete', @post method: :destroy %>
+  
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/posts/show.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/posts/4" for ::1 at 2022-06-28 18:27:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 555)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 4464)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.3ms | Allocations: 6458)
+
+
+Started POST "/posts/4" for ::1 at 2022-06-28 18:27:59 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/posts/4"):
+  
+Started GET "/posts" for ::1 at 2022-06-28 18:28:07 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4666)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 5272)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:28:10 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3694)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.2ms | Allocations: 4709)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 18:29:18 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.7ms | Allocations: 1734)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 41.2ms | Allocations: 2095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 5774)
+Completed 200 OK in 117ms (Views: 58.6ms | ActiveRecord: 1.2ms | Allocations: 11827)
+
+
+Started PATCH "/posts/4" for ::1 at 2022-06-28 18:29:20 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Freak", "title"=>"Test", "content"=>"Big Test!!"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:29:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 3720)
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 0.2ms | Allocations: 4722)
+
+
+Started GET "/posts/4/edit" for ::1 at 2022-06-28 18:29:22 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 13.5ms | Allocations: 1230)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 5394)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 0.2ms | Allocations: 6385)
+
+
+Started PATCH "/posts/4" for ::1 at 2022-06-28 18:29:25 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Freak", "title"=>"Test", "content"=>"Big Test!!!"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "Big Test!!!"], ["updated_at", "2022-06-29 01:29:25.806853"], ["id", 4]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 16ms (ActiveRecord: 3.5ms | Allocations: 3083)
+
+
+Started GET "/posts/4" for ::1 at 2022-06-28 18:29:25 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 3704)
+Completed 200 OK in 25ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 4689)
+
+
+Started POST "/posts/4" for ::1 at 2022-06-28 18:29:26 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/posts/4"):
+  
+Started GET "/posts/4" for ::1 at 2022-06-28 18:31:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4375)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.3ms | Allocations: 6237)
+
+
+Started DELETE "/posts/4" for ::1 at 2022-06-28 18:31:05 -0700
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+  [1m[36mPost Destroy (1.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 20ms (ActiveRecord: 3.0ms | Allocations: 2789)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:31:05 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1062)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 4565)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms | Allocations: 5165)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 18:31:07 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 5.1ms | Allocations: 1459)
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 5861)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 6461)
+
+
+Started POST "/posts" for ::1 at 2022-06-28 18:31:19 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"test", "content"=>"This is a test"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["author", "Test"], ["content", "This is a test"], ["created_at", "2022-06-29 01:31:19.405033"], ["updated_at", "2022-06-29 01:31:19.405033"]]
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 15ms (ActiveRecord: 3.7ms | Allocations: 2482)
+
+
+Started GET "/posts/5" for ::1 at 2022-06-28 18:31:19 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3692)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.2ms | Allocations: 4678)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:31:22 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 5014)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.2ms | Allocations: 5472)
+
+
+Started GET "/posts/5" for ::1 at 2022-06-28 18:31:22 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 3692)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 4680)
+
+
+Started GET "/posts/5/edit" for ::1 at 2022-06-28 18:31:23 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.7ms | Allocations: 1204)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 5459)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.3ms | Allocations: 6574)
+
+
+Started PATCH "/posts/5" for ::1 at 2022-06-28 18:31:26 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"test", "content"=>"This is a test!"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "This is a test!"], ["updated_at", "2022-06-29 01:31:26.673816"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `update'
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 22ms (ActiveRecord: 2.2ms | Allocations: 3022)
+
+
+Started GET "/posts/5" for ::1 at 2022-06-28 18:31:26 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3702)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 4689)
+
+
+Started DELETE "/posts/5" for ::1 at 2022-06-28 18:31:27 -0700
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms | Allocations: 2568)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:31:27 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4371)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 4826)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 18:38:15 -0700
+  
+SyntaxError (/Users/rafagarcia/Desktop/PROJECTS/Study-Jun-2022-Blog/blog/app/controllers/posts_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+...   before_action :set_post only(:show, :edit, :update, :dest...
+...                           ^~~~
+/Users/rafagarcia/Desktop/PROJECTS/Study-Jun-2022-Blog/blog/app/controllers/posts_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+...before_action :post_params only(:create, :update)
+...                           ^~~~
+):
+  
+app/controllers/posts_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/posts_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/posts_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/posts_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/posts_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/posts_controller.rb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/posts" for ::1 at 2022-06-28 18:38:49 -0700
+  
+NoMethodError (undefined method `only' for PostsController:Class):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/posts/5" for ::1 at 2022-06-28 18:38:51 -0700
+  
+NoMethodError (undefined method `only' for PostsController:Class):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/posts/5/edit" for ::1 at 2022-06-28 18:38:52 -0700
+  
+NoMethodError (undefined method `only' for PostsController:Class):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/posts" for ::1 at 2022-06-28 18:38:55 -0700
+  
+NoMethodError (undefined method `only' for PostsController:Class):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/posts" for ::1 at 2022-06-28 18:39:26 -0700
+  
+NameError (undefined local variable or method `only' for PostsController:Class):
+  
+app/controllers/posts_controller.rb:2:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/posts" for ::1 at 2022-06-28 18:40:02 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 4554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 8271)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.7ms | Allocations: 9674)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:40:52 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 4312)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.3ms | Allocations: 5593)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:40:54 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 4361)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.2ms | Allocations: 4829)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:40:55 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3724)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms | Allocations: 4732)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 18:40:56 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.7ms | Allocations: 1330)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 5523)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.2ms | Allocations: 6534)
+
+
+Started PATCH "/posts/3" for ::1 at 2022-06-28 18:41:04 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Fernandes", "title"=>"Let's see", "content"=>"This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!!"}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!!"], ["updated_at", "2022-06-29 01:41:04.455394"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms | Allocations: 3309)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:41:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3693)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.2ms | Allocations: 4698)
+
+
+Started GET "/posts/3/edit" for ::1 at 2022-06-28 18:41:53 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.0ms | Allocations: 1200)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 5394)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.2ms | Allocations: 6402)
+
+
+Started PATCH "/posts/3" for ::1 at 2022-06-28 18:41:57 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Fernandes", "title"=>"Let's see", "content"=>"This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!!!"}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "This is a post created directly from the browser, not using the console to try that anymore. Happy Coding!!!"], ["updated_at", "2022-06-29 01:41:57.474949"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 18ms (ActiveRecord: 2.5ms | Allocations: 3057)
+
+
+Started GET "/posts/3" for ::1 at 2022-06-28 18:41:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 3693)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 0.2ms | Allocations: 4698)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:41:59 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4963)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms | Allocations: 5431)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-28 18:42:00 -0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.9ms | Allocations: 1123)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 5313)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 5797)
+
+
+Started POST "/posts" for ::1 at 2022-06-28 18:42:09 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"hbjsa", "content"=>"Test"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "author", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hbjsa"], ["author", "Test"], ["content", "Test"], ["created_at", "2022-06-29 01:42:09.357199"], ["updated_at", "2022-06-29 01:42:09.357199"]]
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:17:in `create'
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 16ms (ActiveRecord: 2.4ms | Allocations: 2469)
+
+
+Started GET "/posts/6" for ::1 at 2022-06-28 18:42:09 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3692)
+Completed 200 OK in 29ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 4698)
+
+
+Started GET "/posts/6/edit" for ::1 at 2022-06-28 18:42:10 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.6ms | Allocations: 1199)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 5406)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.2ms | Allocations: 6414)
+
+
+Started PATCH "/posts/6" for ::1 at 2022-06-28 18:42:13 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"author"=>"Test", "title"=>"hbjsa", "content"=>"Test!!"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mPost Update (4.8ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "Test!!"], ["updated_at", "2022-06-29 01:42:13.166876"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25:in `update'
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 58ms (ActiveRecord: 8.9ms | Allocations: 3055)
+
+
+Started GET "/posts/6" for ::1 at 2022-06-28 18:42:13 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 6047)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.6ms | Allocations: 7052)
+
+
+Started DELETE "/posts/6" for ::1 at 2022-06-28 18:42:14 -0700
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `destroy'
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/posts_controller.rb:30:in `destroy'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 3.7ms | Allocations: 2601)
+
+
+Started GET "/posts" for ::1 at 2022-06-28 18:42:14 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4361)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.5ms | Allocations: 4825)
+
+
