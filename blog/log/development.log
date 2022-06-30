@@ -4528,3 +4528,216 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 111ms (Views: 106.0ms | ActiveRecord: 0.6ms | Allocations: 7401)
 
 
+Started GET "/posts" for ::1 at 2022-06-29 21:46:47 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 4894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 11180)
+Completed 200 OK in 166ms (Views: 133.7ms | ActiveRecord: 1.4ms | Allocations: 16795)
+
+
+Started GET "/posts/7" for ::1 at 2022-06-29 21:46:50 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (4.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered posts/show.html.erb within layouts/application (Duration: 63.1ms | Allocations: 9055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.9ms | Allocations: 13389)
+Completed 200 OK in 96ms (Views: 80.5ms | ActiveRecord: 5.6ms | Allocations: 15572)
+
+
+Started GET "/posts" for ::1 at 2022-06-29 21:47:01 -0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 5056)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.2ms | Allocations: 5608)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-29 21:57:11 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (4.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered comments/_comment.html.erb (Duration: 1.3ms | Allocations: 162)
+  Rendered comments/_comment.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered posts/show.html.erb within layouts/application (Duration: 79.7ms | Allocations: 1954)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 162.8ms | Allocations: 5868)
+Completed 200 OK in 355ms (Views: 202.6ms | ActiveRecord: 7.7ms | Allocations: 9073)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-29 21:58:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 2.8ms | Allocations: 223)
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 0.6ms | Allocations: 80)
+  Rendered posts/show.html.erb within layouts/application (Duration: 34.0ms | Allocations: 2137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 111.5ms | Allocations: 6033)
+Completed 200 OK in 136ms (Views: 124.8ms | ActiveRecord: 1.1ms | Allocations: 7969)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-29 21:59:19 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered comments/_comment.html.erb (Duration: 4.7ms | Allocations: 156)
+  Rendered comments/_comment.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered posts/show.html.erb within layouts/application (Duration: 31.0ms | Allocations: 1890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 171.7ms | Allocations: 5799)
+Completed 200 OK in 199ms (Views: 185.4ms | ActiveRecord: 0.9ms | Allocations: 7763)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-29 21:59:48 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 149.8ms | Allocations: 7415)
+  Rendered layout layouts/application.html.erb (Duration: 153.7ms | Allocations: 7498)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.4ms | Allocations: 9423)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000008390>):
+     7: 
+     8: <div id="comments">
+     9:   <h4>Comments</h4>
+    10:      <%= render partial: "comments/comment", locals: {comment: comment}%>
+    11: </div>
+    12: 
+    13: <%= link_to 'Back', posts_path %>
+  
+app/views/posts/show.html.erb:10
+Started GET "/posts/1" for ::1 at 2022-06-29 21:59:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered comments/_comment.html.erb (Duration: 2.3ms | Allocations: 156)
+  Rendered comments/_comment.html.erb (Duration: 0.3ms | Allocations: 44)
+  Rendered posts/show.html.erb within layouts/application (Duration: 20.7ms | Allocations: 1889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 259.1ms | Allocations: 5796)
+Completed 200 OK in 380ms (Views: 360.0ms | ActiveRecord: 1.8ms | Allocations: 7818)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-29 22:00:16 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1271)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 1346)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.5ms | Allocations: 3256)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= @post.title %></h1>
+<h4>Author: <%=@post.author %></h4>
+<p>
+     <strong>Post:</strong> 
+     <p><%=@post.content%></p>
+</p>
+
+<div id="comments">
+  <h4>Comments</h4>
+  <% @post.comments.each do |comment| %>
+     <%= render @post.comments>
+  <% end %>
+</div>
+
+<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path %>
+<%= link_to 'Delete', @post, method: :delete %>
+
+):
+1:    <h1><%= @post.title %></h1>
+2:    <h4>Author: <%=@post.author %></h4>
+3:    <p>
+4:         <strong>Post:</strong> 
+5:         <p><%=@post.content%></p>
+6:    </p>
+7:    
+8:    <div id="comments">
+9:      <h4>Comments</h4>
+10:      <% @post.comments.each do |comment| %>
+11:         <%= render @post.comments>
+12:      <% end %>
+13:    </div>
+14:    
+15:    <%= link_to 'Back', posts_path %>
+16:    <%= link_to 'Edit', edit_post_path %>
+17:    <%= link_to 'Delete', @post, method: :delete %>
+  
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+app/views/posts/show.html.erb:12: syntax error, unexpected '<'
+app/views/posts/show.html.erb:20: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/posts/1" for ::1 at 2022-06-29 22:01:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:38:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:10
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 5.6ms | Allocations: 189)
+  Rendered collection of comments/_comment.html.erb [2 times] (Duration: 0.5ms | Allocations: 80)
+  Rendered posts/show.html.erb within layouts/application (Duration: 25.4ms | Allocations: 2031)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | Allocations: 5939)
+Completed 200 OK in 100ms (Views: 87.4ms | ActiveRecord: 3.3ms | Allocations: 7970)
+
+

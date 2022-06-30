@@ -8,10 +8,7 @@
 <div id="comments">
   <h4>Comments</h4>
   <% @post.comments.each do |comment| %>
-    <div>
-      <strong><%= comment.author %> says:</strong>
-      <%= comment.content %>
-    </div>
+     <%= render @post.comments %>
   <% end %>
 </div>
 
