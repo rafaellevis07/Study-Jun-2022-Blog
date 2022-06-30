@@ -5,6 +5,16 @@
      <p><%=@post.content%></p>
 </p>
 
+<div id="comments">
+  <h4>Comments</h4>
+  <% @post.comments.each do |comment| %>
+    <div>
+      <strong><%= comment.author %> says:</strong>
+      <%= comment.content %>
+    </div>
+  <% end %>
+</div>
+
 <%= link_to 'Back', posts_path %>
 <%= link_to 'Edit', edit_post_path %>
 <%= link_to 'Delete', @post, method: :delete %>
