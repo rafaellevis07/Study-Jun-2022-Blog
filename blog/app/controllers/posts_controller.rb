@@ -32,12 +32,13 @@ class PostsController < ApplicationController
     end
 
 
-    
+    #Private area so it won't be called
     private
     def set_post 
         @post = Post.find(params[:id])
     end
 
+    #It will act agains't  malicious users
     def post_params
         post_params = params.require(:post).permit(:title, :author, :content)
     end

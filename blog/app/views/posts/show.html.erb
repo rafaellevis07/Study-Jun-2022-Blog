@@ -6,10 +6,10 @@
 </p>
 
 <div id="comments">
-  <h4>Comments</h4>
-  <% @post.comments.each do |comment| %>
-     <%= render @post.comments %>
-  <% end %>
+  <h4>Comments:</h4>
+  <%= render @post.comments%>
+  <h3>Add Comment:</h3>
+  <%= render partial: "comments/form", locals: {comment: @post.comments.new} %>
 </div>
 
 <%= link_to 'Back', posts_path %>

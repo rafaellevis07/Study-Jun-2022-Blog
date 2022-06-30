@@ -1,7 +1,9 @@
 <h1> All Posts </h1>
 
+<%# Loops through all posts and prints the title. %>
 <% @posts.each do |post| %>
     <p><%= link_to post.title, post %></p>
 <% end %>
 
+<%# link_to method has as first argument what it will be shown as the link and second argument the path %>
 <%= link_to 'New Post', new_post_path %>
