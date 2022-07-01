@@ -7,11 +7,13 @@
 
 <div id="comments">
   <h4>Comments:</h4>
-  <%= render @post.comments%>
+  <%= render @post.comments %>
   <h3>Add Comment:</h3>
   <%= render partial: "comments/form", locals: {comment: @post.comments.new} %>
 </div>
 
+<%# link_to has two arguments, the name of the link and the path %>
 <%= link_to 'Back', posts_path %>
 <%= link_to 'Edit', edit_post_path %>
+<%# In this case link_to has the name of the link, pass the method  %>
 <%= link_to 'Delete', @post, method: :delete %>
